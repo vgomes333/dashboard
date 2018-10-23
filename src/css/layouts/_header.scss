@@ -10,17 +10,22 @@
     }
     
     &-user{
-        @include header-margin-top;
         margin-right: 16px;
         color: $cinza-padrao;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
     }
     
     &-menu{
-        @include header-margin-top;
         display: flex;
+        align-items: center;
         color: $cinza-padrao;
         
         &-items{
+            height: 100%;
+            align-items: center;
+            display: flex;
             margin-left: 40px;
             cursor: pointer;
             

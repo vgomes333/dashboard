@@ -25,14 +25,19 @@ img {
     margin: 9px 0 0 16px;
     width: 1.1cm; }
   .header-user {
-    margin-top: 16px;
     margin-right: 16px;
-    color: #71839B; }
-  .header-menu {
-    margin-top: 16px;
+    color: #71839B;
     display: flex;
+    align-items: center;
+    cursor: pointer; }
+  .header-menu {
+    display: flex;
+    align-items: center;
     color: #71839B; }
     .header-menu-items {
+      height: 100%;
+      align-items: center;
+      display: flex;
       margin-left: 40px;
       cursor: pointer; }
       .header-menu-items .material-icons {
