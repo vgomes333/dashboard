@@ -3,3 +3,19 @@
     width: 100%;
     min-height: 91vh;
 }
+
+.saudacao{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+
+    &-hello-user{
+        font-size: 20px;
+        font-weight: 700;
+        color: $cinza-padrao;
+    }
+
+    &-welcome-user{
+        color: $cinza-padrao;
+    }
+}

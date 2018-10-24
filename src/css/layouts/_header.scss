@@ -37,6 +37,7 @@
             &:hover{
                 color: $laranja-multe;
                 border-bottom: 3px solid $laranja-multe;
+                transition: 0.2s;
             }
         }
     }

@@ -36,7 +36,8 @@ img {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd; }
+  background-color: #ddd;
+  transition: 0.3s; }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .showDropdown {
@@ -72,9 +73,21 @@ img {
         margin-right: 6px; }
       .header-menu-items:hover {
         color: #FFB33F;
-        border-bottom: 3px solid #FFB33F; }
+        border-bottom: 3px solid #FFB33F;
+        transition: 0.2s; }
 
 .principal-content {
   background-color: #F4F7FC;
   width: 100%;
   min-height: 91vh; }
+
+.saudacao {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px; }
+  .saudacao-hello-user {
+    font-size: 20px;
+    font-weight: 700;
+    color: #71839B; }
+  .saudacao-welcome-user {
+    color: #71839B; }
