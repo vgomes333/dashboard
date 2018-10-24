@@ -17,92 +17,50 @@ ul {
 img {
   max-width: 100%; }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 1cm;
-  right: 0.2cm;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex; }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-  transition: 0.3s; }
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.showDropdown {
-  display: flex;
-  flex-direction: column; }
-
-.menu-dropdown-subitem {
-  display: none;
-  position: absolute;
-  top: 1cm;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
-  .menu-dropdown-subitem a:hover {
-    background-color: #ddd;
-    transition: 0.3s; }
-  .menu-dropdown-subitem a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: flex; }
-
-.show-subitem {
-  display: flex;
-  flex-direction: column; }
-
 .header {
+  background-color: #FFFFFF;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  background-color: #FFFFFF; }
+  align-items: center; }
   .header-logo {
     margin: 9px 0 0 16px;
     width: 1.1cm; }
-  .header-user {
+  .header-hamburger, .header-close {
     margin-right: 16px;
     color: #71839B;
-    display: flex;
-    align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 32px; }
   .header-menu {
-    display: flex;
-    align-items: center;
-    color: #71839B; }
+    display: none;
+    flex-direction: column;
+    color: #71839B;
+    position: absolute;
+    right: 0;
+    top: 1.3cm;
+    background: #ffff; }
     .header-menu-items {
       height: 100%;
-      align-items: center;
       display: flex;
-      margin-left: 40px;
-      cursor: pointer;
-      border-bottom: 3px solid transparent; }
+      flex-direction: column;
+      align-items: baseline;
+      padding: 5px 0;
+      cursor: pointer; }
+      .header-menu-items-sub {
+        display: none;
+        color: black;
+        width: 100%;
+        background-color: #FFB33F; }
+        .header-menu-items-sub li {
+          padding: 5px 10px; }
       .header-menu-items .material-icons {
         font-size: 16px;
         margin-right: 6px; }
-      .header-menu-items:hover {
-        color: #FFB33F;
-        border-color: #FFB33F;
-        transition: 0.2s; }
 
 .principal-content {
   background-color: #F4F7FC;
   width: 100%;
-  min-height: 91vh; }
+  min-height: 92vh; }
 
 .saudacao {
   display: flex;

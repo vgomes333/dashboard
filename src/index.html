@@ -10,18 +10,19 @@
 </head>
 <body>
     <header class="header">
-        <div>
-            <img class="header-logo" src="images/multe.png" alt="Mult-e Logo">
-        </div>
+        <img class="header-logo" src="images/multe.png" alt="Mult-e Logo">
+        <i class="header-hamburger material-icons">menu</i>
+        <i style="display: none;" class="header-close material-icons">close</i>
         
-        <ul class="header-menu">
+        <ul id="menu" class="header-menu">
             <li class="header-menu-items menu-dropdown">
                 <a href="#">
                     <i class="material-icons">dashboard</i>
                     Dashboard
-                    <i class="material-icons">expand_more</i>
+                    <i class="material-icons expand-more">expand_more</i>
+                    <i style="display: none;" class="expand-less material-icons">expand_less</i>
                 </a>
-                <ul id="submenu" class="menu-dropdown-subitem">
+                <ul id="submenu" class="header-menu-items-sub">
                     <li>
                         <a href="#">
                             Item - 1 
@@ -78,7 +79,7 @@
             </li>
         </ul>
         
-        <div  id="dropdownBtn"  class="header-user">
+        <!-- <div  id="dropdownBtn"  class="header-user">
             <i class="material-icons">person</i>
             Name User
             <i class="material-icons">expand_more</i>
@@ -87,7 +88,7 @@
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
             </div>
-        </div>
+        </div> -->
     </header>
     
     <main class="principal-content">
