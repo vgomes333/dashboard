@@ -1,3 +1,4 @@
+// Dropdown User
 var btnDropdown = document.querySelector("#dropdownBtn");
 var body = document.querySelector(".principal-content");
 
@@ -7,4 +8,16 @@ btnDropdown.addEventListener("click", function(){
 
 body.addEventListener("click", function(){
   document.getElementById("dropdown-items").classList.remove("showDropdown");
+});
+
+
+// Menu Dropdown
+var btnDropdown = document.querySelector(".menu-dropdown");
+
+btnDropdown.addEventListener("click", function(){
+  document.getElementById("submenu").classList.toggle("show-subitem");
+});
+
+body.addEventListener("click", function(){
+  document.getElementById("submenu").classList.remove("show-subitem");
 });
