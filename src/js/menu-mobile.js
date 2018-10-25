@@ -13,3 +13,9 @@ close.addEventListener("click", function(){
     close.style.display = "none";
     menuMobile.style.display = "none";
 });
+
+body.addEventListener("click", function(){
+    hamburger.style.display = "block";
+    close.style.display = "none";
+    menuMobile.style.display = "none";
+});

@@ -14,6 +14,13 @@ function showSubmenuUser() {
         submenuUser.classList.add("showOptions");   
         icoExpandLessUser.style.display = "inline";
         icoExpandMoreUser.style.display = "none";
+        
+        body.addEventListener("click", function(){
+            submenuUser.style.display = "none";
+            submenuUser.classList.remove("showOptions");
+            icoExpandLessUser.style.display = "none";
+            icoExpandMoreUser.style.display = "inline";         
+        });
     }
 }
 
