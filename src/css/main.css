@@ -26,11 +26,40 @@ img {
   .header-logo {
     margin: 9px 0 0 16px;
     width: 1.1cm; }
+  .header-user {
+    cursor: pointer;
+    color: #71839B;
+    align-items: center; }
+    @media only screen and (min-width: 1248px) {
+      .header-user {
+        margin-right: 16px; } }
+    .header-user-subitems {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      background: #ffff;
+      width: 40%;
+      box-shadow: black -1px -1px 20px -1px; }
+      @media only screen and (min-width: 1248px) {
+        .header-user-subitems {
+          flex-direction: column;
+          width: 10%; } }
+      .header-user-subitems-link {
+        width: 100%;
+        text-align: center; }
+        .header-user-subitems-link:hover {
+          background: #F2F2F2; }
+      .header-user-subitems a {
+        padding: 5px 0; }
   .header-hamburger, .header-close {
     margin-right: 16px;
     color: #71839B;
     cursor: pointer;
     font-size: 32px; }
+    @media only screen and (min-width: 1248px) {
+      .header-hamburger, .header-close {
+        display: none; } }
   .header-menu {
     display: none;
     flex-direction: column;
@@ -39,20 +68,48 @@ img {
     right: 0;
     top: 1.3cm;
     background: #ffff; }
+    @media only screen and (min-width: 1248px) {
+      .header-menu {
+        display: flex;
+        flex-direction: row;
+        position: inherit; } }
     .header-menu-items {
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: baseline;
-      padding: 5px 0;
+      margin: 0 10px;
+      padding: 13px 5px;
       cursor: pointer; }
+      @media only screen and (min-width: 1248px) {
+        .header-menu-items {
+          border-bottom: 3px solid transparent; }
+          .header-menu-items:hover {
+            border-color: #FFB33F;
+            transition: 0.2s; } }
       .header-menu-items-sub {
         display: none;
         color: black;
         width: 100%;
         background-color: #FFB33F; }
+        @media only screen and (min-width: 1248px) {
+          .header-menu-items-sub {
+            color: #71839B;
+            position: absolute;
+            width: 10%;
+            top: 1cm;
+            box-shadow: black -1px -1px 20px -1px;
+            background: #ffff; } }
         .header-menu-items-sub li {
-          padding: 5px 10px; }
+          margin: 0 10px;
+          padding: 0 5px; }
+          @media only screen and (min-width: 1248px) {
+            .header-menu-items-sub li {
+              padding: 10px 0;
+              margin: 0;
+              text-align: center; }
+              .header-menu-items-sub li:hover {
+                background-color: #F2F2F2; } }
       .header-menu-items .material-icons {
         font-size: 16px;
         margin-right: 6px; }
