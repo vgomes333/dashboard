@@ -95,9 +95,10 @@
             
             &-sub{
                 display: none;
-                color: black;
+                color: #ffff;
                 width: 100%;
                 background-color: #FFB33F;
+                
                 
                 @include mq ('desktop'){
                     color: $cinza-padrao;
@@ -109,8 +110,8 @@
                 }
                 
                 li{
-                    margin: 0 10px;
-                    padding: 0 5px; 
+                    margin: 10px 0px;
+                    text-align: center; 
                     
                     @include mq ('desktop'){
                         padding: 10px 0;

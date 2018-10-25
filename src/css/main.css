@@ -89,7 +89,7 @@ img {
             transition: 0.2s; } }
       .header-menu-items-sub {
         display: none;
-        color: black;
+        color: #ffff;
         width: 100%;
         background-color: #FFB33F; }
         @media only screen and (min-width: 1248px) {
@@ -101,8 +101,8 @@ img {
             box-shadow: black -1px -1px 20px -1px;
             background: #ffff; } }
         .header-menu-items-sub li {
-          margin: 0 10px;
-          padding: 0 5px; }
+          margin: 10px 0px;
+          text-align: center; }
           @media only screen and (min-width: 1248px) {
             .header-menu-items-sub li {
               padding: 10px 0;

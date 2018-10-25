@@ -12,15 +12,15 @@
     <header class="header">
         <img class="header-logo" src="images/multe.png" alt="Mult-e Logo">
         
-        <ul id="menu" class="header-menu">
-            <li class="header-menu-items menu-dropdown">
+        <ul class="header-menu">
+            <li id="dashboard-menu" class="header-menu-items menu-dropdown">
                 <a href="#">
                     <i class="material-icons">dashboard</i>
                     Dashboard
                     <i class="material-icons expand-more">expand_more</i>
                     <i style="display: none;" class="expand-less material-icons">expand_less</i>
                 </a>
-                <ul id="submenu" class="header-menu-items-sub">
+                <ul id="dashboard-submenu" class="header-menu-items-sub">
                     <li>
                         <a href="#">
                             Item - 1 
@@ -80,8 +80,9 @@
         <div class="header-user">
             <i class="material-icons">person</i>
             Name User
-            <i class="material-icons">expand_more</i>
-            <div id="user-dropdown" class="header-user-subitems">
+            <i class="material-icons expand-more-user">expand_more</i>
+            <i style="display: none;" class="material-icons expand-less-user">expand_less</i>
+            <div id="user-submenu" class="header-user-subitems">
                 <a class="header-user-subitems-link" href="#">Link 1</a>
                 <a class="header-user-subitems-link" href="#">Link 2</a>
                 <a class="header-user-subitems-link" href="#">Link 3</a>
@@ -97,6 +98,8 @@
             <span class="saudacao-welcome-user">Welcome to the Dashboard</span>
         </div>
     </main>
-    <script src="js/dropdown.js"></script>
+    <script src="js/dropdown-dashboard.js"></script>
+    <script src="js/dropdown-user.js"></script>
+    <script src="js/menu-mobile.js"></script>
 </body>
 </html>
